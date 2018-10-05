@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    public float speed, initialSpeed = 100, maxSpeed = 500;
+
+    private float xRotation, zMovement;
+
+    void Start () {
+        speed = initialSpeed;
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		
+        xRotation = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+        zMovement = Time.deltaTime * speed;
+        transform.Rotate(0, xRotation, 0);
+        transform.Translate(0, 0, zMovement);
+        if (speed<maxSpeed)
+            speed = speed + 25 * Time.deltaTime;
 	}
 }
