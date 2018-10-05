@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float speed, initialSpeed = 2, maxSpeed = 25, rotationSpeed = 120, jump = 10;
+    public float speed, initialSpeed = 2, maxSpeed = 15, rotationSpeed = 120, jump = 10;
     
     private float xRotation, zMovement, groundDistance;
     private Rigidbody rgbd;
@@ -38,10 +38,16 @@ public class PlayerController : MonoBehaviour {
     bool GroundCheck()
     {
         RaycastHit hit;
-        float distance = 1f;
-        Vector3 dir = new Vector3(0, -1);
+        float distance = -1f;
+        Vector3 dir = Vector3.down;
+        Debug.Log(Physics.Raycast(transform.position, dir, out hit, distance));
 
-        return Physics.Raycast(transform.position, dir, out hit, distance);
+
+        Debug.Log(hit.collider);
+
+
+
+        return hit.collider != null;
         
     }
 }
