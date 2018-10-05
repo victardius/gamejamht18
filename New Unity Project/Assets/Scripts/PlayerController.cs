@@ -5,15 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float speed, initialSpeed = 2, maxSpeed = 25, rotationSpeed = 120, jump = 10;
-    public GameObject groundCheck;
-
+    
     private float xRotation, zMovement, groundDistance;
     private Rigidbody rgbd;
 
     void Start () {
         rgbd = GetComponent<Rigidbody>();
         speed = initialSpeed;
-        //groundDistance = BoxCollider.
 	}
 	
 	void Update ()
@@ -27,10 +25,23 @@ public class PlayerController : MonoBehaviour {
 
         
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") )
         {
-            rgbd.AddForce(transform.up * jump);
+            if (GroundCheck())
+            {
+                rgbd.AddForce(transform.up * jump);
+            }
         }
 
 	}
+
+    bool GroundCheck()
+    {
+        RaycastHit hit;
+        float distance = 1f;
+        Vector3 dir = new Vector3(0, -1);
+
+        return Physics.Raycast(transform.position, dir, out hit, distance);
+        
+    }
 }
