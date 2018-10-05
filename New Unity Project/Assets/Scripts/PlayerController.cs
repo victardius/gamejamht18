@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour {
         float distance = 1f;
         Vector3 dir = new Vector3(0, -1);
 
-        return !Physics.Raycast(transform.position, dir, out hit, distance);
+        return Physics.Raycast(transform.position, dir, out hit, distance);
         
     }
 }
