@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float speed, initialSpeed = 100, maxSpeed = 500;
+    public float speed, initialSpeed = 2, maxSpeed = 10, rotationSpeed = 120;
 
     private float xRotation, zMovement;
 
@@ -12,12 +12,16 @@ public class PlayerController : MonoBehaviour {
         speed = initialSpeed;
 	}
 	
-	void Update () {
-        xRotation = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+	void Update ()
+    {
+        xRotation = Input.GetAxis("Horizontal") * Time.deltaTime * rotationSpeed;
         zMovement = Time.deltaTime * speed;
         transform.Rotate(0, xRotation, 0);
         transform.Translate(0, 0, zMovement);
         if (speed<maxSpeed)
             speed = speed + 25 * Time.deltaTime;
+
+        //Input.GetAxis("Vertical") * Time.deltaTime * rotationSpeed;
+
 	}
 }
