@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetButtonDown("Jump") )
         {
-            Debug.Log(GroundCheck());
             if (GroundCheck())
             {
                 rgbd.AddForce(transform.up * jump);
