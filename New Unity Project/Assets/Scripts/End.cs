@@ -7,6 +7,8 @@ public class End : MonoBehaviour {
     bool enterd = false;
     public float timeLeft = 5.0f;
 
+    ChangeScene cs = new ChangeScene();
+
     // Use this for initialization
     void Start () {
 		
@@ -23,7 +25,7 @@ public class End : MonoBehaviour {
 
         if (timeLeft <= 0)
         {
-            Debug.Log("Enter new sceane");
+            cs.next();
             SetSphere(true);
             
             timeLeft = 5.0f;
