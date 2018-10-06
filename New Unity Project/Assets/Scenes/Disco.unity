@@ -14577,6 +14577,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 160a6e18aa5c7954dafffc869bc93c77,
     type: 3}
   m_PrefabInternal: {fileID: 2110836962}
+--- !u!65 &1181022990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1181022989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 50, y: 76.163666, z: 10}
+  m_Center: {x: -24.999973, y: 38.081833, z: 0.000002861023}
 --- !u!114 &1181022991
 MonoBehaviour:
   m_ObjectHideFlags: 0
