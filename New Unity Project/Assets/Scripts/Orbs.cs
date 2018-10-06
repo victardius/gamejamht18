@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Orbs : MonoBehaviour {
 
-    public float decreesedSpeed = 0.75f;
+    public float decreesedSpeed = 0.1f;
     bool enterd = false;
-    public float startTimeLeft = 5.0f;
+    public float startTimeLeft = 10.0f;
     public float timeLeft;
 
     private GameObject counter;

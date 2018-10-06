@@ -90,10 +90,7 @@ public class MovementController : MonoBehaviour
         float distance = 20f;
         Vector3 dir = new Vector3(0, -1f, 0);
         Physics.Raycast(transform.position + new Vector3(0, 0.1f, 0), dir, out hit, distance);
-
-
-        Debug.Log(hit.collider);
-        Debug.Log(hit.distance);
+        
 
 
 
