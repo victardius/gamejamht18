@@ -11,20 +11,22 @@ public class End : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
         if (enterd)
         {
-            timeLeft -= Time.deltaTime;
+            timeLeft -= Time.unscaledDeltaTime;
+            Time.timeScale = 0.01f;
         }
         
 
         if (timeLeft <= 0)
         {
+            Time.timeScale = 1f;
             cs.next();
             SetSphere(true);
             
