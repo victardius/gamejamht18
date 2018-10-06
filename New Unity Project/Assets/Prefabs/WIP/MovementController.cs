@@ -35,8 +35,8 @@ public class MovementController : MonoBehaviour
     {
         /*frontDriverW.motorTorque = m_verticalInput * motorForce;
         frontPassengerW.motorTorque = m_verticalInput * motorForce;*/
-        frontDriverW.motorTorque = 5 * speed;
-        frontPassengerW.motorTorque = 5 * speed;
+        frontDriverW.motorTorque = 50 * speed;
+        frontPassengerW.motorTorque = 50 * speed;
     }
 
     private void UpdateWheelPoses()
