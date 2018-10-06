@@ -15738,7 +15738,7 @@ Prefab:
     - target: {fileID: 114713029857954312, guid: 393e54aa70eb1c342b28f546ab75a46d,
         type: 2}
       propertyPath: maxSpeed
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 114713029857954312, guid: 393e54aa70eb1c342b28f546ab75a46d,
         type: 2}
@@ -15748,7 +15748,7 @@ Prefab:
     - target: {fileID: 114713029857954312, guid: 393e54aa70eb1c342b28f546ab75a46d,
         type: 2}
       propertyPath: initialSpeed
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114713029857954312, guid: 393e54aa70eb1c342b28f546ab75a46d,
         type: 2}
