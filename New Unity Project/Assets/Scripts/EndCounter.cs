@@ -30,7 +30,6 @@ public class EndCounter : MonoBehaviour {
         }
 
         currentCount = initialCount - count;
-        Debug.Log(currentCount);
         orbs.text = currentCount + "";
 
 	}
