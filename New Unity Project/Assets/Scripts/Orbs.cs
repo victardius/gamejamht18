@@ -8,8 +8,7 @@ public class Orbs : MonoBehaviour {
     bool enterd = false;
     public float startTimeLeft = 10.0f;
     public float timeLeft;
-
-    private GameObject counter;
+    public GameObject counter;
 
     // Use this for initialization
     void Start () {
@@ -38,8 +37,16 @@ public class Orbs : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+       
+        if (other.GetComponent<MovementController>()!=null){
 
-        other.GetComponent<MovementController>().speed*= decreesedSpeed;
+            other.GetComponent<MovementController>().speed *= decreesedSpeed;
+        }
+        else if (other.GetComponent<PlayerController>()!=null)
+        {
+            other.GetComponent<PlayerController>().speed *= decreesedSpeed;
+        }
+
 
         if (counter!=null)
         {
