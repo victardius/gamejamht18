@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5550fab0f562e8e498a2a9cac98500fe
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: beed532e33c3c474a897c0d814a8f7a4
+  - enabled: 1
+    path: Assets/Scenes/Level.unity
+    guid: c790089a6ef9ca64f88f0b816697a07a
+  - enabled: 1
+    path: Assets/Scenes/Town.unity
+    guid: 1387166cf65325b4d97d8f4f6551c733
+  - enabled: 1
+    path: Assets/Scenes/WoodLandOfDoom.unity
+    guid: 51059706e1bac9b4fa6cc8955b343b4b
+  - enabled: 1
+    path: Assets/Scenes/Desert.unity
+    guid: 3456250f45bac8f4e95ae831baa156d4
+  - enabled: 1
+    path: Assets/Scenes/Disco.unity
+    guid: 1fefc82d1c4910c4caa4a0aff0f7c592
   m_configObjects: {}

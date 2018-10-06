@@ -16,7 +16,7 @@ public class CameraFollow : MonoBehaviour {
 	
 	void LateUpdate () {
         playerAngle = player.transform.eulerAngles.y;
-        rotation = Quaternion.Euler(15, playerAngle, 0);
+        rotation = Quaternion.Euler(7, playerAngle, 0);
         transform.position = player.transform.position + (rotation * offsetPos);
         transform.LookAt(player.transform);
     }
