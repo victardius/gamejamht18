@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Orbs : MonoBehaviour {
 
+    public float decreesedSpeed = 0.90f;
     bool enterd = false;
-    public float timeLeft = 5.0f;
+    public float startTimeLeft = 5.0f;
+    public float timeLeft;
+
+    public Canvas counter;
 
     // Use this for initialization
     void Start () {
-		
-	}
+        timeLeft = startTimeLeft;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -26,7 +31,7 @@ public class Orbs : MonoBehaviour {
         {
             SetSphere(true);
 
-            timeLeft = 5.0f;
+            timeLeft = startTimeLeft;
             enterd = false;
         }
     }
@@ -34,9 +39,12 @@ public class Orbs : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
 
-        other.GetComponent< PlayerController> ().speed*=0.90f;
+        other.GetComponent< PlayerController> ().speed*= decreesedSpeed;
 
-
+        if (counter!=null)
+        {
+            counter.GetComponent<EndCounter>().count--;
+        }
 
         enterd = true;
         SetSphere(false);
