@@ -24,7 +24,6 @@ public class Orbs : MonoBehaviour {
         if (enterd)
         {
             timeLeft -= Time.deltaTime;
-            Debug.Log("entered");
         }
         
 
@@ -50,7 +49,6 @@ public class Orbs : MonoBehaviour {
         enterd = true;
         SetSphere(false);
         //gameObject.SetActive(false);
-        Debug.Log("entered");
         
     }
 
