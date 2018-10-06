@@ -5004,6 +5004,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114182950803539354, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: speedMultiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182950803539354, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: initialSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182950803539354, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: maxSpeed
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d57623195fe76428ec51ff4782bfac, type: 2}
   m_IsPrefabAsset: 0

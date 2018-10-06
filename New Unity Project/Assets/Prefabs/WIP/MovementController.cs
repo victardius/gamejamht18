@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovementController : MonoBehaviour
 {
 
-    public float speed, initialSpeed = 50, maxSpeed = 150, rotationSpeed = 120, jump = 1000;
+    public float speed, initialSpeed = 50, maxSpeed = 150, rotationSpeed = 120, jump = 1000, speedMultiplier = 10;
 
     private float xRotation, zMovement, groundDistance;
     private Rigidbody rgbd;
@@ -35,8 +35,8 @@ public class MovementController : MonoBehaviour
     {
         /*frontDriverW.motorTorque = m_verticalInput * motorForce;
         frontPassengerW.motorTorque = m_verticalInput * motorForce;*/
-        frontDriverW.motorTorque = 10 * speed;
-        frontPassengerW.motorTorque = 10 * speed;
+        frontDriverW.motorTorque = speedMultiplier * speed;
+        frontPassengerW.motorTorque = speedMultiplier * speed;
     }
 
     private void UpdateWheelPoses()
