@@ -39,15 +39,16 @@ public class PlayerController : MonoBehaviour {
     {
         RaycastHit hit;
         float distance = 20f;
-        Vector3 dir = Vector3.down;
-        Physics.Raycast(transform.position, dir, out hit, distance);
+        Vector3 dir = new Vector3(0,-1f,0);
+        Physics.Raycast(transform.position + new Vector3 (0,0.1f,0), dir, out hit, distance);
 
 
         Debug.Log(hit.collider);
+        Debug.Log(hit.distance);
 
 
 
-        return hit.collider != null && hit.distance < 0.1f;
+        return hit.collider != null && hit.distance < 0.15f;
         
     }
 }
