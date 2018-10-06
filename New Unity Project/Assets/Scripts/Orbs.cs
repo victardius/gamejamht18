@@ -33,6 +33,11 @@ public class Orbs : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+
+        other.GetComponent< PlayerController> ().speed*=0.90f;
+
+
+
         enterd = true;
         SetSphere(false);
         //gameObject.SetActive(false);
