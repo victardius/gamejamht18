@@ -38,16 +38,16 @@ public class PlayerController : MonoBehaviour {
     bool GroundCheck()
     {
         RaycastHit hit;
-        float distance = -1f;
+        float distance = 20f;
         Vector3 dir = Vector3.down;
-        Debug.Log(Physics.Raycast(transform.position, dir, out hit, distance));
+        Physics.Raycast(transform.position, dir, out hit, distance);
 
 
         Debug.Log(hit.collider);
 
 
 
-        return hit.collider != null;
+        return hit.collider != null && hit.distance < 0.1f;
         
     }
 }
