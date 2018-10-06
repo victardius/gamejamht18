@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Orbs : MonoBehaviour {
 
-    public float decreesedSpeed = 0.90f;
+    public float decreesedSpeed = 0.75f;
     bool enterd = false;
     public float startTimeLeft = 5.0f;
     public float timeLeft;
 
-    public Canvas counter;
+    private GameObject counter;
 
     // Use this for initialization
     void Start () {
+        counter = GameObject.Find("GameController");
         timeLeft = startTimeLeft;
 
     }
@@ -39,7 +40,7 @@ public class Orbs : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
 
-        other.GetComponent< PlayerController> ().speed*= decreesedSpeed;
+        other.GetComponent<MovementController>().speed*= decreesedSpeed;
 
         if (counter!=null)
         {

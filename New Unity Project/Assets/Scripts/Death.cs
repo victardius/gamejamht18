@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour {
 
+   
+
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -17,6 +18,7 @@ public class Death : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        GameController.deaths++;
        Scene loadedLevel = SceneManager.GetActiveScene();
        SceneManager.LoadScene(loadedLevel.buildIndex);
 

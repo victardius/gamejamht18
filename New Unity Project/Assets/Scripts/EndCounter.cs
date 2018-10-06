@@ -1,16 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndCounter : MonoBehaviour {
     public int count = 30;
 
     public GameObject endCode;
+    public Text orbsMax;
+    public Text orbs;
 
-	// Use this for initialization
-	void Start () {
+    private int initialCount, currentCount;
 
+    // Use this for initialization
+    void Start () {
+        initialCount = count;
         endCode.SetActive(false);
+
+        orbsMax.text = count + "";
 
     }
 	
@@ -21,6 +28,10 @@ public class EndCounter : MonoBehaviour {
         {
             endCode.SetActive(true);
         }
+
+        currentCount = initialCount - count;
+        Debug.Log(currentCount);
+        orbs.text = currentCount + "";
 
 	}
 

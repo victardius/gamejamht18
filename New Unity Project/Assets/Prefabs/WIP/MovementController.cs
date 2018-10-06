@@ -35,8 +35,8 @@ public class MovementController : MonoBehaviour
     {
         /*frontDriverW.motorTorque = m_verticalInput * motorForce;
         frontPassengerW.motorTorque = m_verticalInput * motorForce;*/
-        frontDriverW.motorTorque = 50 * speed;
-        frontPassengerW.motorTorque = 50 * speed;
+        frontDriverW.motorTorque = 10 * speed;
+        frontPassengerW.motorTorque = 10 * speed;
     }
 
     private void UpdateWheelPoses()
@@ -72,7 +72,7 @@ public class MovementController : MonoBehaviour
             }
         }
         if (speed < maxSpeed)
-            speed = speed + 1 * Time.deltaTime;
+            speed = speed + 2f * Time.deltaTime;
     }
 
     private float m_horizontalInput;

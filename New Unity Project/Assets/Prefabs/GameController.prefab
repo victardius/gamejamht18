@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4695887651011446}
   - component: {fileID: 114128352362812236}
+  - component: {fileID: 114896707019282248}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -51,3 +52,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba233a1c1fac8c4b9293edcf5699681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slide: {fileID: 0}
+  death: {fileID: 0}
+--- !u!114 &114896707019282248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1450709916462304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5833270c0b12f3d4d99ef78b17fbde0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 20
+  endCode: {fileID: 0}
+  orbsMax: {fileID: 0}
+  orbs: {fileID: 0}
