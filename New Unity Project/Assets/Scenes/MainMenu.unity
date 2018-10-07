@@ -1784,9 +1784,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1570352058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c550429fbddb5c49bddafad36a70083, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fff8015bb460bb4fa24f14d888b30e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadingScreen: 8
 --- !u!4 &1570352060
 Transform:
   m_ObjectHideFlags: 0
