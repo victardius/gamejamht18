@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -55,5 +56,12 @@ public class GameController : MonoBehaviour {
 
         
         death.text = deaths + "";
+    }
+
+    public void SelfDestruct()
+    {
+        GameController.deaths++;
+        Scene loadedLevel = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(loadedLevel.buildIndex);
     }
 }
