@@ -14101,6 +14101,21 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114335625070572606, guid: 10e0daa7f8053c246870bfbfec5e2767,
+        type: 2}
+      propertyPath: m_MinValue
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114335625070572606, guid: 10e0daa7f8053c246870bfbfec5e2767,
+        type: 2}
+      propertyPath: m_Value
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114335625070572606, guid: 10e0daa7f8053c246870bfbfec5e2767,
+        type: 2}
+      propertyPath: m_MaxValue
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10e0daa7f8053c246870bfbfec5e2767, type: 2}
   m_IsPrefabAsset: 0
@@ -15724,7 +15739,7 @@ GameObject:
   - component: {fileID: 1122634862}
   - component: {fileID: 1122634861}
   m_Layer: 0
-  m_Name: Race
+  m_Name: FrictionBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15743,8 +15758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   initialSpeed: 40
-  maxSpeed: 100
-  rotationSpeed: 0
+  maxSpeed: 60
+  rotationSpeed: -30
   jump: 400
 --- !u!4 &1122634862
 Transform:
@@ -17627,7 +17642,7 @@ Prefab:
     - target: {fileID: 114896707019282248, guid: 4792c2d450300514c8d5f49921f46bbb,
         type: 2}
       propertyPath: count
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114896707019282248, guid: 4792c2d450300514c8d5f49921f46bbb,
         type: 2}
