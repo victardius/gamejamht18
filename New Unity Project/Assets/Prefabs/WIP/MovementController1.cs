@@ -94,7 +94,7 @@ public class MovementController1 : MonoBehaviour
         RaycastHit hit;
         float distance = 20f;
         Vector3 dir = new Vector3(0, -1f, 0);
-        Physics.Raycast(transform.position + new Vector3(0, 1f, 0), dir, out hit, distance);
+        Physics.Raycast(transform.position + new Vector3(0, 0.1f, 0), dir, out hit, distance);
         
 
 
