@@ -54,6 +54,10 @@ public class ManagerOfScenes : MonoBehaviour {
     {
         currentScene = SceneManager.GetActiveScene().buildIndex;
         nextLevelToLoad = currentScene + 1;
+        if(nextLevelToLoad == 8)
+        {
+            nextLevelToLoad = 0;
+        }
 
         StartCoroutine(LoadingScene(nextLevelToLoad));
 
