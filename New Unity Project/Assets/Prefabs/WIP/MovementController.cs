@@ -85,7 +85,9 @@ public class MovementController : MonoBehaviour
     public Transform frontDriverT, frontPassengerT;
     public Transform rearDriverT, rearPassengerT;
     public float maxSteerAngle = 30;
-    public float motorForce = 500;bool GroundCheck()
+    public float motorForce = 500;
+
+    bool GroundCheck()
     {
         RaycastHit hit;
         float distance = 20f;
@@ -96,5 +98,13 @@ public class MovementController : MonoBehaviour
 
 
         return hit.collider != null && hit.distance < 0.2f;
+    }
+
+    public void jumpPlatform(Transform t)
+    {
+        
+        frontDriverW.motorTorque = 0;
+        frontPassengerW.motorTorque = 0;
+        rgbd.MovePosition(t.position);
     }
 }
