@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class End : MonoBehaviour {
 
     bool enterd = false;
-    public float timeLeft = 5.0f;
+    public float timeLeft = 3.0f;
 
-    ChangeScene cs = new ChangeScene();
+    
 
     // Use this for initialization
     void Start () {
@@ -17,31 +18,39 @@ public class End : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (enterd)
-        {
-            timeLeft -= Time.unscaledDeltaTime;
-            Time.timeScale = 0.01f;
-        }
+        //if (enterd)
+        //{
+        //    timeLeft -= Time.unscaledDeltaTime;
+        //    Time.timeScale = 0.01f;
+        //}
         
 
-        if (timeLeft <= 0)
-        {
-            Time.timeScale = 1f;
-            cs.next();
-            SetSphere(true);
+        //if (timeLeft <= 0)
+        //{
+
+        //    Time.timeScale = 1f;
+
+
+
+        //    FindObjectOfType<ManagerOfScenes>().next();
+        //    SetSphere(true);
             
-            timeLeft = 5.0f;
-            enterd = false;
-        }
+        //    timeLeft = 5.0f;
+        //    FindObjectOfType<LoadingScreen>().gameObject.SetActive(false);
+        //    enterd = false;
+            
+        //}
     }
 
     private void OnTriggerEnter(Collider other)
     {
+
         enterd = true;
+        
         Debug.Log("Collect code");
         SetSphere(false);
+        FindObjectOfType<ManagerOfScenes>().next();
 
-        
     }
 
     private void SetSphere(bool state)

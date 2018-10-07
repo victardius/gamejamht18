@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Disco.unity
     guid: 1fefc82d1c4910c4caa4a0aff0f7c592
+  - enabled: 1
+    path: Assets/Scenes/Desert2.unity
+    guid: a52bc41e1ecd34947af7454552f13aea
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: d6ee31c384577f9479d8456308546cb8
   m_configObjects: {}

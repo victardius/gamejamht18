@@ -7,8 +7,9 @@ using UnityEngine.SceneManagement;
 public class LoadingScreen : MonoBehaviour {
 
     // Use this for initialization
+    public GameObject loadingScrene;
     public Text uiText;
-    private List<string> names;
+    private List<string> names = new List<string>();
     private Scene currentScene;
 
     void Start () {
@@ -17,16 +18,27 @@ public class LoadingScreen : MonoBehaviour {
         names.Add("Maze Daze");
         names.Add("Lava Town");
         names.Add("Wood Land of Doom");
-        names.Add("Desert Dessert");
+        names.Add("Duo Race");
         names.Add("Disco Dance");
+        names.Add("Dessert Desert");
 
-        currentScene = SceneManager.GetActiveScene();
-        int nextLvl = currentScene.buildIndex + 1;
-        uiText.text = names[nextLvl];
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    public void setText(int index)
+    {
+        Debug.Log(names[index] + "is loading");
+        uiText.text = names[index];
+    }
+
+    void activeLoading()
+    {
+
+      //  SceneManager.LoadSceneAsync();
+    }
 }
