@@ -7,13 +7,15 @@ public class End : MonoBehaviour {
 
     bool enterd = false;
     public float timeLeft = 3.0f;
-
+ private GameObject gameController;
     
 
     // Use this for initialization
     void Start () {
-        
-    }
+       
+
+    gameController = GameObject.Find("GameController");
+}
 	
 	// Update is called once per frame
 	void Update () {
@@ -46,7 +48,7 @@ public class End : MonoBehaviour {
     {
 
         enterd = true;
-        
+        Destroy(gameController.GetComponent<GameController>().audioSource);
         Debug.Log("Collect code");
         SetSphere(false);
         FindObjectOfType<ManagerOfScenes>().next();

@@ -12,9 +12,33 @@ public class GameController : MonoBehaviour {
 
     private GameObject player;
 
-	void Start () {
+    public GameObject audioSource;
+
+    void Start () {
         //player = GameObject.Find("FrictionBotBody");
         player = GameObject.Find("FrictionBotBody");
+
+        if (audioSource == null)
+        {
+            audioSource = GameObject.Find("Audio Source");
+
+            DontDestroyOnLoad(audioSource);
+            audioSource.GetComponent<AudioSource>().loop = true;
+
+            if (audioSource.GetComponent<AudioSource>().playOnAwake != true)
+            {
+                audioSource.GetComponent<AudioSource>().Play();
+            }
+            audioSource.GetComponent<AudioSource>().playOnAwake = true;
+
+        }
+
+        else
+        {
+            //don't create new game object
+        }
+
+
     }
 
     private void FixedUpdate()
