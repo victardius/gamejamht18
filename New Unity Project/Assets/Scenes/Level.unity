@@ -1035,6 +1035,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &208620832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1136,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &213950893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1528,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &265886898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1629,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &266029338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,6 +2023,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &320549842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,6 +2422,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &381998262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,6 +2905,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &457144492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,6 +3006,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &494284639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,6 +3107,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &524702209
 GameObject:
   m_ObjectHideFlags: 0
@@ -3685,6 +3694,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &568964097
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,6 +4777,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &761624095
 GameObject:
   m_ObjectHideFlags: 0
@@ -4965,6 +4976,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1001 &785816858
 Prefab:
   m_ObjectHideFlags: 0
@@ -5018,6 +5030,236 @@ Prefab:
         type: 2}
       propertyPath: maxSpeed
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182950803539354, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_ExtremumSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_Stiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_Stiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_AsymptoteValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_AsymptoteValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_AsymptoteSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_AsymptoteSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_AsymptoteValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_AsymptoteValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_AsymptoteValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_AsymptoteValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_AsymptoteSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_AsymptoteSlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_AsymptoteValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_AsymptoteValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_Stiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_ForwardFriction.m_Stiffness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114869168476449526, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: AntiRoll
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 146967208404242706, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_Mass
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 146622040906026980, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_Mass
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 146319732749078982, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_Mass
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 146372851035006950, guid: 01d57623195fe76428ec51ff4782bfac,
+        type: 2}
+      propertyPath: m_Mass
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d57623195fe76428ec51ff4782bfac, type: 2}
@@ -5122,6 +5364,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &798446113
 GameObject:
   m_ObjectHideFlags: 0
@@ -5514,6 +5757,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &836878241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5614,6 +5858,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &851681232
 GameObject:
   m_ObjectHideFlags: 0
@@ -6505,6 +6750,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &948964598
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,6 +6851,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &960841460
 GameObject:
   m_ObjectHideFlags: 0
@@ -6705,6 +6952,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &963077043
 GameObject:
   m_ObjectHideFlags: 0
@@ -6903,6 +7151,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &974117000
 GameObject:
   m_ObjectHideFlags: 0
@@ -7101,6 +7350,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &976065778
 GameObject:
   m_ObjectHideFlags: 0
@@ -7201,6 +7451,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &978773844
 GameObject:
   m_ObjectHideFlags: 0
@@ -7301,6 +7552,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1015059234
 GameObject:
   m_ObjectHideFlags: 0
@@ -7401,6 +7653,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1043195883
 GameObject:
   m_ObjectHideFlags: 0
@@ -7889,6 +8142,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1157171998
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,6 +8633,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1225060020
 GameObject:
   m_ObjectHideFlags: 0
@@ -8479,6 +8734,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1231390068
 GameObject:
   m_ObjectHideFlags: 0
@@ -8579,6 +8835,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1235872073
 GameObject:
   m_ObjectHideFlags: 0
@@ -9161,6 +9418,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1311035780
 GameObject:
   m_ObjectHideFlags: 0
@@ -9416,6 +9674,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1332857684
 GameObject:
   m_ObjectHideFlags: 0
@@ -9595,6 +9854,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1339872484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dde124d9cb469744d85f1d0baaff7b54,
@@ -9797,6 +10057,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1001 &1347133238
 Prefab:
   m_ObjectHideFlags: 0
@@ -10351,6 +10612,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1404088837
 GameObject:
   m_ObjectHideFlags: 0
@@ -10549,6 +10811,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1421676423
 GameObject:
   m_ObjectHideFlags: 0
@@ -10929,6 +11192,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1454326330
 GameObject:
   m_ObjectHideFlags: 0
@@ -11127,6 +11391,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1470874422
 GameObject:
   m_ObjectHideFlags: 0
@@ -11227,6 +11492,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1493662988
 GameObject:
   m_ObjectHideFlags: 0
@@ -11327,6 +11593,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1499369167
 GameObject:
   m_ObjectHideFlags: 0
@@ -11525,6 +11792,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1510085535
 GameObject:
   m_ObjectHideFlags: 0
@@ -11723,6 +11991,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1573206228
 GameObject:
   m_ObjectHideFlags: 0
@@ -11823,6 +12092,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1600376153
 GameObject:
   m_ObjectHideFlags: 0
@@ -11923,6 +12193,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1662740711
 GameObject:
   m_ObjectHideFlags: 0
@@ -12511,6 +12782,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1801370534
 GameObject:
   m_ObjectHideFlags: 0
@@ -12806,6 +13078,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1854484846
 GameObject:
   m_ObjectHideFlags: 0
@@ -12906,6 +13179,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1868862864
 GameObject:
   m_ObjectHideFlags: 0
@@ -13006,6 +13280,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &1872986190 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1294406930400556, guid: 01d57623195fe76428ec51ff4782bfac,
@@ -13683,6 +13958,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &2021055908
 GameObject:
   m_ObjectHideFlags: 0
@@ -13885,6 +14161,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &2048290008
 GameObject:
   m_ObjectHideFlags: 0
@@ -14278,6 +14555,7 @@ MonoBehaviour:
   decreesedSpeed: 0.85
   startTimeLeft: 10
   timeLeft: 5
+  counter: {fileID: 0}
 --- !u!1 &2143174898
 GameObject:
   m_ObjectHideFlags: 0

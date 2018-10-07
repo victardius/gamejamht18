@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour {
 
 	void Start () {
         //player = GameObject.Find("FrictionBotBody");
-        player = GameObject.Find("FrictionBot");
+        player = GameObject.Find("FrictionBotBody");
     }
 
     private void FixedUpdate()

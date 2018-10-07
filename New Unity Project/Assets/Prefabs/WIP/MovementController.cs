@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovementController : MonoBehaviour
 {
 
-    public float speed, initialSpeed = 1, maxSpeed = 50, rotationSpeed = 120, jump = 1000, speedMultiplier = 20;
+    public float speed, initialSpeed = 20, maxSpeed, rotationSpeed = 120, jump = 1000, speedMultiplier;
 
     private float xRotation, zMovement, groundDistance;
     private Rigidbody rgbd;
@@ -35,8 +35,8 @@ public class MovementController : MonoBehaviour
     {
         /*frontDriverW.motorTorque = m_verticalInput * motorForce;
         frontPassengerW.motorTorque = m_verticalInput * motorForce;*/
-        frontDriverW.motorTorque = speed * 2;
-        frontPassengerW.motorTorque = speed * 2;
+        frontDriverW.motorTorque = (speed * speedMultiplier);
+        frontPassengerW.motorTorque = (speed * speedMultiplier);
     }
 
     private void UpdateWheelPoses()
@@ -73,7 +73,7 @@ public class MovementController : MonoBehaviour
             }
         }
         if (speed < maxSpeed)
-            speed = speed + 0.5f * Time.deltaTime;
+            speed = speed + 1f * Time.deltaTime;
     }
 
     private float m_horizontalInput;
@@ -85,7 +85,7 @@ public class MovementController : MonoBehaviour
     public Transform frontDriverT, frontPassengerT;
     public Transform rearDriverT, rearPassengerT;
     public float maxSteerAngle = 30;
-    public float motorForce = 50;bool GroundCheck()
+    public float motorForce = 500;bool GroundCheck()
     {
         RaycastHit hit;
         float distance = 20f;
